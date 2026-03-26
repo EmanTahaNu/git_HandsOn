@@ -49,3 +49,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+def calculate_gc_content(sequence):
+    """Calculate GC content percentage."""
+    sequence = sequence.upper()
+    gc_count = sequence.count('G') + sequence.count('C')
+    return (gc_count / len(sequence)) * 100
